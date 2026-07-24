@@ -13,6 +13,12 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "prestart": "eslint .",
+    "start": "node index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix"
+  },
+  "devDependencies": {
+    "eslint": "^10.7.0"
   }
 }
